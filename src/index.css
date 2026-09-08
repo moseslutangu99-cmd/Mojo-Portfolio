@@ -10,12 +10,16 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #050505;
   color: #ffffff;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -420,6 +424,14 @@ section:not(.hero) h2 {
 }
 .nav-links.mobile-open a::after {
   display: none;
+}
+
+.mobile-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 section {
