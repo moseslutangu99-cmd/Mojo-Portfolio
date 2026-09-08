@@ -408,10 +408,10 @@ section:not(.hero) h2 {
   flex-direction: column;
   position: fixed;
   top: 75px;
-  right: 4%;
-  width: 220px;
-  padding-right: 10px;
-  gap: 18px;
+  right: 15%;
+  width: min(280px, 80vw);
+  padding: 24px;
+  gap: 20px;
   background: #0a0a0a;
   border: 1px solid #1a1a1a;
   border-radius: 12px;
