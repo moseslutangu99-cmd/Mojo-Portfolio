@@ -576,17 +576,30 @@ section {
    SCROLL REVEAL ANIMATIONS
    ================================ */
 
-.reveal {
+/* ================================
+   SECTION HEADING REVEAL
+   ================================ */
+
+.reveal-heading {
   opacity: 0;
+  transform: translateY(35px);
+
   transition:
     opacity 0.9s ease,
     transform 0.9s ease;
 }
 
-.reveal-heading {
-  transform: translateY(35px);
+.about-section.is-visible .reveal-heading,
+.skills-section.is-visible .reveal-heading,
+.education-section.is-visible .reveal-heading,
+.projects-section.is-visible .reveal-heading,
+.services-section.is-visible .reveal-heading,
+.certificates-section.is-visible .reveal-heading,
+.achievements-section.is-visible .reveal-heading,
+.contact-section.is-visible .reveal-heading {
+  opacity: 1;
+  transform: translateY(0);
 }
-
 .reveal-text {
   transform: translateX(-45px);
 }
