@@ -402,23 +402,22 @@ section:not(.hero) h2 {
 .nav-links {
   display: none;
 }
-
 .nav-links.mobile-open {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 75px;
-  right: 15%;
-  width: min(280px, 80vw);
-  padding: 24px;
+  top: 70px;
+  right: 5%;
+  width: 280px;
+  padding: 25px;
   gap: 20px;
   background: #0a0a0a;
   border: 1px solid #1a1a1a;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   z-index: 999;
+  box-sizing: border-box;
 }
-
 .nav-links.mobile-open a::after {
   display: none;
 }
