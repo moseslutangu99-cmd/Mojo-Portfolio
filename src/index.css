@@ -410,7 +410,7 @@ section:not(.hero) h2 {
   top: 75px;
   right: 4%;
   width: 220px;
-  padding: 15px;
+  padding-right: 10px;
   gap: 18px;
   background: #0a0a0a;
   border: 1px solid #1a1a1a;
