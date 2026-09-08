@@ -1399,7 +1399,12 @@ const handleNavClick = () => {
             </div>
 
 
-            <form className="contact-form reveal-contact">
+            <form
+                  className="contact-form"
+                  action="https://formspree.io/f/xyeynore"
+                  method="POST"
+                  //target='_blank'
+                >
 
               <div className="form-group">
 
@@ -1407,11 +1412,13 @@ const handleNavClick = () => {
                   Name
                 </label>
 
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Your name"
-                />
+<input
+  id="name"
+  name="name"
+  type="text"
+  placeholder="Your name"
+  required
+/>
 
               </div>
 
@@ -1422,11 +1429,13 @@ const handleNavClick = () => {
                   Email
                 </label>
 
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Your email"
-                />
+<input
+  id="email"
+  name="email"
+  type="email"
+  placeholder="Your email"
+  required
+/>
 
               </div>
 
@@ -1437,12 +1446,13 @@ const handleNavClick = () => {
                   Subject
                 </label>
 
-                <input
-                  id="subject"
-                  type="text"
-                  placeholder="What would you like to discuss?"
-                />
-
+<input
+  id="subject"
+  name="subject"
+  type="text"
+  placeholder="What would you like to discuss?"
+  required
+/>
               </div>
 
 
@@ -1452,21 +1462,22 @@ const handleNavClick = () => {
                   Message
                 </label>
 
-                <textarea
-                  id="message"
-                  rows="6"
-                  placeholder="Write your message..."
-                ></textarea>
+<textarea
+  id="message"
+  name="message"
+  rows="6"
+  placeholder="Write your message..."
+></textarea>
 
               </div>
 
 
-              <button
-                type="button"
-                className="btn primary-btn contact-button"
-              >
-                Send Message
-              </button>
+<button 
+  type="submit" 
+  className="btn primary-btn contact-button" 
+> 
+  Send Message 
+</button>
 
             </form>
 
